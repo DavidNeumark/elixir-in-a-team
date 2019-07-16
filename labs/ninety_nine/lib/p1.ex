@@ -40,5 +40,13 @@ defmodule P1 do
     list
     |> List.foldl(0, fn(x, _) -> x end)
 
+  @doc "using Enum.reduce"
+  def find_last7(list), do:
+    list
+    |> Enum.reduce(0,  fn(x, _) -> x end)      
+
+
+
+
 end
 
